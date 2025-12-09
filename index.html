@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Вернем деньги за навязанные услуги, страховки и комиссии по автокредиту. Без предоплат. Работаем по всей России.">
+    <title>Возврат денег за навязанные услуги по автокредиту | Юридическая Компания «Гранд»</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="https://urgrand.ru" target="_blank" rel="noopener">
+                        <img src="images/logo.png" alt="Юридическая Компания Гранд" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="header__logo-text" style="display: none;">
+                            <span style="display: inline-block; width: 20px; height: 20px; border: 2px solid currentColor; transform: rotate(45deg); margin-right: 8px; vertical-align: middle;"></span>
+                            GRANDLEGAL
+                        </div>
+                    </a>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+79063211157" class="header__phone">+7 (906) 321-11-57</a>
+                    <a href="mailto:info@urgrand.ru" class="header__email">info@urgrand.ru</a>
+                </div>
+                <div class="header__messengers">
+                    <a href="https://wa.me/79063211157" class="header__messenger-link" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/urgrand" class="header__messenger-link" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.169 1.858-.896 6.728-.896 6.728-.465 2.27-.923 3.397-1.51 3.397-.631 0-1.107-.396-1.707-1.396-.594-.985-2.175-2.03-3.15-2.722-1.395-.98-.49-1.52.304-2.4.209-.23 3.673-3.37 3.74-3.656.008-.033.016-.15-.056-.217-.072-.066-.178-.04-.255-.024-.108.02-1.82 1.16-5.14 3.404-.487.33-.93.49-1.325.482-.437-.008-1.277-.247-1.9-.45-.768-.25-1.38-.384-1.325-.81.027-.216.405-.437 1.14-.66 4.46-1.9 7.43-3.15 8.9-3.75 4.24-1.71 5.12-2.01 5.7-2.02.126 0 .41.03.595.15.16.1.256.24.282.315.024.075.05.245.025.38z"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="btn btn--primary header__callback" id="callbackBtn">Заказать звонок</button>
+                <button class="header__burger" id="burgerBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Мобильное меню -->
+            <div class="header__mobile-menu" id="mobileMenu">
+                <div class="header__mobile-contacts">
+                    <a href="tel:+79063211157" class="header__phone">+7 (906) 321-11-57</a>
+                    <a href="mailto:info@urgrand.ru" class="header__email">info@urgrand.ru</a>
+                </div>
+                <div class="header__mobile-messengers">
+                    <a href="https://wa.me/79063211157" class="header__messenger-link" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/urgrand" class="header__messenger-link" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.169 1.858-.896 6.728-.896 6.728-.465 2.27-.923 3.397-1.51 3.397-.631 0-1.107-.396-1.707-1.396-.594-.985-2.175-2.03-3.15-2.722-1.395-.98-.49-1.52.304-2.4.209-.23 3.673-3.37 3.74-3.656.008-.033.016-.15-.056-.217-.072-.066-.178-.04-.255-.024-.108.02-1.82 1.16-5.14 3.404-.487.33-.93.49-1.325.482-.437-.008-1.277-.247-1.9-.45-.768-.25-1.38-.384-1.325-.81.027-.216.405-.437 1.14-.66 4.46-1.9 7.43-3.15 8.9-3.75 4.24-1.71 5.12-2.01 5.7-2.02.126 0 .41.03.595.15.16.1.256.24.282.315.024.075.05.245.025.38z"/>
+                        </svg>
+                    </a>
+                </div>
+                <button class="btn btn--primary header__mobile-callback" id="mobileCallbackBtn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">ВЕРНЕМ ДЕНЬГИ ЗА НАВЯЗАННЫЕ УСЛУГИ, СТРАХОВКИ И КОМИССИИ ПО АВТОКРЕДИТУ</h1>
+                <div class="hero__advantages">
+                    <div class="advantage-item">
+                        <svg class="advantage-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                        </svg>
+                        <span>Без предоплат</span>
+                    </div>
+                    <div class="advantage-item">
+                        <svg class="advantage-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                        </svg>
+                        <span>Работаем по всей России</span>
+                    </div>
+                    <div class="advantage-item">
+                        <svg class="advantage-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                        </svg>
+                        <span>Сохранение процентной ставки</span>
+                    </div>
+                    <div class="advantage-item">
+                        <svg class="advantage-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                        </svg>
+                        <span>Сохранение скидки от автосалона</span>
+                    </div>
+                </div>
+                <div class="hero__actions">
+                    <button class="btn btn--large btn--primary btn--with-arrow hero__cta" onclick="document.getElementById('mainForm').scrollIntoView({behavior: 'smooth'})">
+                        Получить консультацию
+                    </button>
+                    <a href="https://urgrand.ru" target="_blank" rel="noopener" class="btn btn--large btn--secondary hero__main-site-link">
+                        Основной сайт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Logos -->
+    <section class="banks">
+        <div class="container">
+            <div class="banks__content">
+                <div class="bank-logo">
+                    <img src="images/banks/sberbank.png" alt="Сбербанк" class="bank-logo__img">
+                </div>
+                <div class="bank-logo">
+                    <img src="images/banks/vtb.png" alt="ВТБ" class="bank-logo__img">
+                </div>
+                <div class="bank-logo">
+                    <img src="images/banks/alfa.png" alt="Альфа-Банк" class="bank-logo__img">
+                </div>
+                <div class="bank-logo">
+                    <img src="images/banks/tinkoff.png" alt="Тинькофф" class="bank-logo__img">
+                </div>
+                <div class="bank-logo">
+                    <img src="images/banks/raiffeisen.png" alt="Райффайзен" class="bank-logo__img">
+                </div>
+                <div class="bank-logo">
+                    <img src="images/banks/gazprombank.png" alt="Газпромбанк" class="bank-logo__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Form -->
+    <section class="form-section" id="mainForm">
+        <div class="container">
+            <div class="form-section__content">
+                <h2 class="section-title">Заполните анкету для оценки вашего случая</h2>
+                <form class="main-form" id="autocreditForm">
+                    <div class="form-group">
+                        <label class="form-label">Когда купили автомобиль?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="purchase_date" value="less_30" required>
+                                <span>Прошло меньше 30 дней</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="purchase_date" value="more_30" required>
+                                <span>Прошло больше 30 дней</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Что вам навязали?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="custom_rate">
+                                <span>Услуги, такие как «Назначь свою ставку» и т.п. при оформлении кредитного договора</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="road_assistance">
+                                <span>Помощь на дорогах</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="insurance">
+                                <span>Страхование (здоровье, потеря работы)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="extended_warranty">
+                                <span>Доп гарантия на авто</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="option_contract">
+                                <span>Опционный договор (если заемщик не может выплатить займ, авто забирают по остатку задолженности)</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="imposed_services[]" value="medical_legal_cards">
+                                <span>Карты мед. и юр. помощи</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="credit_amount">Сумма кредита (руб.)</label>
+                            <input type="number" id="credit_amount" name="credit_amount" class="form-input" placeholder="Введите сумму" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="bank_name">Какой банк?</label>
+                            <input type="text" id="bank_name" name="bank_name" class="form-input" placeholder="Название банка" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="client_name">Ваше имя</label>
+                            <input type="text" id="client_name" name="client_name" class="form-input" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="client_phone">Телефон</label>
+                            <input type="tel" id="client_phone" name="client_phone" class="form-input" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="client_email">Email</label>
+                        <input type="email" id="client_email" name="client_email" class="form-input" placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy_agreement" required>
+                            <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--large btn--primary btn--with-arrow form-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="statistics__grid">
+                <div class="statistic-item">
+                    <div class="statistic-item__number">1230+</div>
+                    <div class="statistic-item__label">Успешных дел</div>
+                </div>
+                <div class="statistic-item">
+                    <div class="statistic-item__number">98%</div>
+                    <div class="statistic-item__label">Процент успеха</div>
+                </div>
+                <div class="statistic-item">
+                    <div class="statistic-item__number">2-3</div>
+                    <div class="statistic-item__label">Месяца средний срок</div>
+                </div>
+                <div class="statistic-item">
+                    <div class="statistic-item__number">500+</div>
+                    <div class="statistic-item__label">Вернули за 2024 год (тыс. руб.)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <p class="section-subtitle">Простой и понятный процесс возврата ваших денег</p>
+            <div class="how-it-works__steps">
+                <div class="step-item">
+                    <div class="step-item__number">01</div>
+                    <div class="step-item__content">
+                        <h3 class="step-item__title">Заявка и консультация</h3>
+                        <p class="step-item__description">Заполните анкету на сайте или позвоните нам. Наш юрист бесплатно оценит вашу ситуацию и расскажет о перспективах возврата.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-item__number">02</div>
+                    <div class="step-item__content">
+                        <h3 class="step-item__title">Сбор документов</h3>
+                        <p class="step-item__description">Мы поможем собрать все необходимые документы: кредитный договор, договоры на дополнительные услуги, справки об оплате.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-item__number">03</div>
+                    <div class="step-item__content">
+                        <h3 class="step-item__title">Досудебное урегулирование</h3>
+                        <p class="step-item__description">Отправляем претензию в банк с требованием вернуть деньги. В большинстве случаев банки идут навстречу без суда.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-item__number">04</div>
+                    <div class="step-item__content">
+                        <h3 class="step-item__title">Судебное разбирательство</h3>
+                        <p class="step-item__description">Если банк отказывается возвращать деньги, мы обращаемся в суд и представляем ваши интересы до получения положительного решения.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-item__number">05</div>
+                    <div class="step-item__content">
+                        <h3 class="step-item__title">Возврат денег</h3>
+                        <p class="step-item__description">После решения суда или соглашения с банком деньги возвращаются на ваш счет. Оплата наших услуг только после успешного результата.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees Section -->
+    <section class="guarantees">
+        <div class="container">
+            <h2 class="section-title">Наши гарантии</h2>
+            <div class="guarantees__grid">
+                <div class="guarantee-card">
+                    <div class="guarantee-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="guarantee-card__title">Работаем без предоплаты</h3>
+                    <p class="guarantee-card__description">Оплата только после успешного возврата денег. Если не вернем - не платите.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="guarantee-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="guarantee-card__title">Сохранение условий кредита</h3>
+                    <p class="guarantee-card__description">Гарантируем сохранение процентной ставки и всех скидок от автосалона.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="guarantee-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="guarantee-card__title">Конфиденциальность</h3>
+                    <p class="guarantee-card__description">Все данные защищены. Мы не передаем информацию третьим лицам.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="guarantee-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="guarantee-card__title">Опыт и экспертиза</h3>
+                    <p class="guarantee-card__description">Более 10 лет опыта в защите прав потребителей. Знаем все тонкости законодательства.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Мы можем оказать помощь в следующих случаях:</p>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Возврат навязанных услуг по автокредиту</h3>
+                    <p class="service-card__description">Помощь в возврате денежных средств за навязанные дополнительные услуги при оформлении автокредита</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Помощь на дорогах</h3>
+                    <p class="service-card__description">Возврат средств за навязанную услугу помощи на дорогах</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Страхование (здоровье, потеря работы)</h3>
+                    <p class="service-card__description">Возврат страховых премий за навязанное страхование жизни и здоровья</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Доп гарантия на авто</h3>
+                    <p class="service-card__description">Возврат средств за навязанную дополнительную гарантию</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Опционный договор</h3>
+                    <p class="service-card__description">Помощь в расторжении опционного договора, по которому банк может забрать авто</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Карты мед. и юр. помощи</h3>
+                    <p class="service-card__description">Возврат средств за навязанные карты медицинской и юридической помощи</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="reviews__grid">
+                <a href="https://urgrand.ru/reviews#review-1" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-card__header">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">ИИ</div>
+                            <div>
+                                <div class="review-card__name">Иван Иванов</div>
+                                <div class="review-card__date">15.03.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-card__rating">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">Обратился в компанию Гранд по поводу возврата навязанной страховки. Процесс занял около 2 месяцев, но результат превзошел ожидания - вернули всю сумму! Спасибо профессионалам!</p>
+                    <div class="review-card__link">Читать полный отзыв →</div>
+                </a>
+                <a href="https://urgrand.ru/reviews#review-2" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-card__header">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">МП</div>
+                            <div>
+                                <div class="review-card__name">Мария Петрова</div>
+                                <div class="review-card__date">22.02.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-card__rating">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">Вернули деньги за навязанную услугу "Помощь на дорогах". Работали без предоплаты, все прозрачно. Рекомендую!</p>
+                    <div class="review-card__link">Читать полный отзыв →</div>
+                </a>
+                <a href="https://urgrand.ru/reviews#review-3" target="_blank" rel="noopener" class="review-card">
+                    <div class="review-card__header">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">СС</div>
+                            <div>
+                                <div class="review-card__name">Сергей Сидоров</div>
+                                <div class="review-card__date">10.01.2024</div>
+                            </div>
+                        </div>
+                        <div class="review-card__rating">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">Отличная работа! Вернули деньги за дополнительную гарантию, которую навязали в автосалоне. Процентная ставка по кредиту осталась прежней, как и обещали.</p>
+                    <div class="review-card__link">Читать полный отзыв →</div>
+                </a>
+            </div>
+            <div class="reviews__practice">
+                <h3 class="reviews__practice-title">Судебная практика</h3>
+                <p class="reviews__practice-text">Мы имеем успешный опыт возврата денежных средств через суд. Ознакомиться с решениями судов можно по ссылке.</p>
+                <a href="#" class="reviews__practice-link">Ознакомиться с решениями</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq__list">
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Можно ли вернуть деньги за навязанные услуги?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Да, согласно законодательству РФ, вы имеете право вернуть деньги за услуги, которые были навязаны при оформлении автокредита. Банки часто нарушают закон о защите прав потребителей, навязывая дополнительные услуги.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Сколько времени занимает возврат денег?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Срок возврата зависит от конкретной ситуации. В среднем процесс занимает от 1 до 3 месяцев. Если банк отказывается возвращать деньги добровольно, мы обращаемся в суд, что может увеличить срок до 4-6 месяцев.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Нужно ли платить предоплату?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Нет, мы работаем без предоплаты. Оплата производится только после успешного возврата денежных средств. Это гарантирует вам, что мы заинтересованы в положительном результате.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Сохранится ли процентная ставка по кредиту?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Да, мы гарантируем сохранение процентной ставки по кредиту. Возврат навязанных услуг не влияет на условия кредитного договора. Также сохраняется скидка от автосалона, если она была предоставлена.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Какие документы нужны для начала работы?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Для начала работы необходимы: кредитный договор, договоры на дополнительные услуги, справки об оплате, паспорт. После заполнения анкеты наш специалист свяжется с вами и уточнит список необходимых документов.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Работаете ли вы по всей России?</span>
+                        <svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Да, мы работаем по всей территории Российской Федерации. Консультации проводятся дистанционно, документы можно отправить по почте или в электронном виде. При необходимости мы представляем ваши интересы в суде в любом регионе России.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-section__content">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Заполните форму или напишите нам в мессенджеры</p>
+                
+                <div class="contact-messengers">
+                    <p class="contact-messengers__text">Напишите нам напрямую в мессенджеры:</p>
+                    <div class="contact-messengers__links">
+                        <a href="https://wa.me/79063211157" class="contact-messenger-link" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/urgrand" class="contact-messenger-link" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.169 1.858-.896 6.728-.896 6.728-.465 2.27-.923 3.397-1.51 3.397-.631 0-1.107-.396-1.707-1.396-.594-.985-2.175-2.03-3.15-2.722-1.395-.98-.49-1.52.304-2.4.209-.23 3.673-3.37 3.74-3.656.008-.033.016-.15-.056-.217-.072-.066-.178-.04-.255-.024-.108.02-1.82 1.16-5.14 3.404-.487.33-.93.49-1.325.482-.437-.008-1.277-.247-1.9-.45-.768-.25-1.38-.384-1.325-.81.027-.216.405-.437 1.14-.66 4.46-1.9 7.43-3.15 8.9-3.75 4.24-1.71 5.12-2.01 5.7-2.02.126 0 .41.03.595.15.16.1.256.24.282.315.024.075.05.245.025.38z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-input" placeholder="Телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-textarea" rows="5" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy_agreement" required>
+                            <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                    </div>
+                    <div class="contact-form__actions">
+                        <button type="submit" class="btn btn--large btn--primary btn--with-arrow">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <div class="contact-item__label">Телефон</div>
+                            <a href="tel:+79063211157" class="contact-item__value">+7 (906) 321-11-57</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <div class="contact-item__label">Email</div>
+                            <a href="mailto:info@urgrand.ru" class="contact-item__value">info@urgrand.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                        </svg>
+                        <div>
+                            <div class="contact-item__label">Адрес</div>
+                            <div class="contact-item__value">г. Казань, Ю.Фучика 90, БЦ Франт</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__main">
+                    <div class="footer__company">
+                        <div class="footer__company-name">ЭПБ ГРАНД</div>
+                        <div class="footer__ogrn">ОГРН: 1231600049999</div>
+                        <div class="footer__address">г. Казань, Ю.Фучика 90, БЦ Франт</div>
+                        <div class="footer__contact">
+                            <a href="tel:+79063211157" class="footer__phone">+7 (906) 321-11-57</a>
+                        </div>
+                        <div class="footer__contact">
+                            <a href="mailto:info@urgrand.ru" class="footer__email">info@urgrand.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <div class="footer__nav-column">
+                            <div class="footer__nav-title">Отрасли</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/development/" class="footer__nav-link">Девелопмент</a></li>
+                                <li><a href="https://urgrand.ru/investicii/" class="footer__nav-link">Инвестиции</a></li>
+                                <li><a href="https://urgrand.ru/informacionnye-tekhnologii/" class="footer__nav-link">Информационные технологии</a></li>
+                                <li><a href="https://urgrand.ru/agropromyshlennyj-kompleks/" class="footer__nav-link">Агропромышленный комплекс</a></li>
+                                <li><a href="https://urgrand.ru/elektronnaya-kommerciya-e-commerce/" class="footer__nav-link">Электронная коммерция (e-commerce)</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-column">
+                            <div class="footer__nav-title">О компании</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/about/" class="footer__nav-link">О компании</a></li>
+                            </ul>
+                            <div class="footer__nav-title">Практики</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/intellektualnaya-sobstvennost/" class="footer__nav-link">Интеллектуальная собственность</a></li>
+                                <li><a href="https://urgrand.ru/sudebno-arbitrazhnaya-praktika/" class="footer__nav-link">Судебно-арбитражная практика</a></li>
+                                <li><a href="https://urgrand.ru/nedvizhimost-i-stroitelstvo/" class="footer__nav-link">Недвижимость и строительство</a></li>
+                                <li><a href="https://urgrand.ru/bankrotstvo/" class="footer__nav-link">Банкротство</a></li>
+                                <li><a href="https://urgrand.ru/zashchita-delovoj-reputacii/" class="footer__nav-link">Защита деловой репутации</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-column">
+                            <div class="footer__nav-title">Блог</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/blog/" class="footer__nav-link">Блог</a></li>
+                            </ul>
+                            <div class="footer__nav-title">Услуги</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/%d1%8d%d0%ba%d1%81%d0%bf%d0%b5%d1%80%d1%82%d0%b8%d0%b7%d0%b0/" class="footer__nav-link">Экспертиза</a></li>
+                                <li><a href="https://urgrand.ru/%d0%ba%d1%83%d1%80%d1%81%d1%8b/" class="footer__nav-link">Курсы</a></li>
+                            </ul>
+                            <div class="footer__nav-title">Контакты</div>
+                            <ul class="footer__nav-list">
+                                <li><a href="https://urgrand.ru/kontakty/" class="footer__nav-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__consultation">
+                <div class="footer__consultation-content">
+                    <h3 class="footer__consultation-title">Необходима консультация специалиста?</h3>
+                    <p class="footer__consultation-text">Оставьте заявку, и наши юристы оперативно свяжутся с вами для первичной консультации.</p>
+                    <button class="btn btn--primary btn--with-arrow footer__consultation-btn" onclick="document.getElementById('mainForm').scrollIntoView({behavior: 'smooth'})">
+                        Отправить заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for callback -->
+    <div class="modal" id="callbackModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal">&times;</button>
+            <h3 class="modal__title">Заказать звонок</h3>
+            <form class="modal-form" id="callbackForm">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Телефон" required>
+                </div>
+                <button type="submit" class="btn btn--primary">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
